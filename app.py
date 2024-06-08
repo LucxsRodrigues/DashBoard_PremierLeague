@@ -12,10 +12,10 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# Carregar o arquivo Excel
+# Carregar o arquivo da planilha Excel
 df = pd.read_excel('statsPL 23_24.xlsx')
 
-# Seção de filtragem no sidebar
+# Seção de filtragem
 st.sidebar.header("Filtre aqui:")
 time = st.sidebar.multiselect(
     "Selecione o(s) time(s):",
@@ -23,7 +23,7 @@ time = st.sidebar.multiselect(
     default=df['time'].unique()[:1]
 )
 
-# Exibir a quantidade de times selecionados, centralizado
+# Exibir a quantidade de times selecionados
 time_text = "Time" if len(time) == 1 else "Times"
 st.markdown(
     f"<h2 style='text-align: center;'>Quantidade de Times selecionados:</h2>",
