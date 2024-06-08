@@ -1,4 +1,5 @@
 streamlit
 plotly
 pandas
-# Adicione outras bibliotecas que seu projeto precisar
+openpyxl
+numpy
