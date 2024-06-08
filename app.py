@@ -23,7 +23,7 @@ time = st.sidebar.multiselect(
     default=df['time'].unique()[:1]
 )
 
-# Exibir a quantidade de times selecionados
+# Exibir a quantidade de times selecionadosss
 time_text = "Time" if len(time) == 1 else "Times"
 st.markdown(
     f"<h2 style='text-align: center;'>Quantidade de Times selecionados:</h2>",
